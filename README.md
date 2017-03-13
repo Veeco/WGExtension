@@ -15,4 +15,4 @@ iOS实用小分类
 ![4.png](http://upload-images.jianshu.io/upload_images/2404215-c56d9f7a2a605baf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 >###所有一切这些问题通通不用愁, 只要直接把小弟这个工具类直接拖进工程即可!
-附上github地址
+>###如在使用过程中有任何问题或更好的建议, 请多多指出, 谢谢!
