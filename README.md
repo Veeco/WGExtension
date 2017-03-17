@@ -2,7 +2,7 @@
 iOS实用小分类
 
 
->是否会担心越界操作数组?
+是否会担心越界操作数组?
 ![1.png](http://upload-images.jianshu.io/upload_images/2404215-cfde8e415bb65bf4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 >是否会担心服务器返回的数据跟说好的不一样?
