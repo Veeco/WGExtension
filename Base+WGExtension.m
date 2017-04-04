@@ -1,5 +1,5 @@
 //
-//  WGExtension.m
+//  Base+WGExtension
 //
 //  Created by Veeco on 17/02/2017.
 //
