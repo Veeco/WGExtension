@@ -1,6 +1,5 @@
 //
 //  NSString+WGExtension.m
-//  test
 //
 //  Created by Veeco on 4/4/17.
 //  Copyright © 2017 Veeco. All rights reserved.
