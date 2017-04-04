@@ -1,5 +1,5 @@
 # WGExtension
-iOS实用小分类
+iOS分类
 
 
 ## 使用方法
