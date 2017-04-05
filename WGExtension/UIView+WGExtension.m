@@ -125,7 +125,7 @@
  * 判断控件是否真正显示在主窗口
  * 返回 是否真正显示在主窗口
  */
-- (BOOL)isShowingOnKeyWindow {
+- (BOOL)wg_isShowingOnKeyWindow {
     
     // 主窗口的bounds
     UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;
