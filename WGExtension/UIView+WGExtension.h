@@ -30,6 +30,6 @@
  * 判断控件是否真正显示在主窗口
  * 返回 是否真正显示在主窗口
  */
-- (BOOL)isShowingOnKeyWindow;
+- (BOOL)wg_isShowingOnKeyWindow;
 
 @end
