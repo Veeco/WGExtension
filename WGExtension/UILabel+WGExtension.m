@@ -10,11 +10,11 @@
 @implementation UILabel (WGExtension)
 
 /**
- * 平分内部文字间距
+ * 平分内部单行文字间距
  * 参数 string 要设置的文字
  * 注意 要先设置了label宽度后再调用(本质是利用富文本属性) 暂时不支持英文字符
  */
-- (void)averageKernWithString:(NSString *)string {
+- (void)wg_averageKernWithString:(NSString *)string {
     
     // 算出间距
     CGFloat margin = (self.bounds.size.width - self.font.pointSize * string.length) / (string.length - 1);
