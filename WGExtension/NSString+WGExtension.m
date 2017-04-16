@@ -17,7 +17,7 @@
  */
 - (CGFloat)wg_calculateStringHeightWithWidth:(CGFloat)width fontSize:(CGFloat)fontSize {
 
-        if (width <= 0.0 || fontSize <= 0.0 || width < fontSize) [NSException raise:@"计算文字高度出错" format:@"请检查传入的宽度与字体大小是否大于0且宽度不小于字体大小"];
+    if (width <= 0.0 || fontSize <= 0.0 || width < fontSize) [NSException raise:@"计算文字高度出错" format:@"请检查传入的宽度与字体大小是否大于0且宽度不小于字体大小"];
     
     // 设置属性
     NSDictionary *dic = @{NSFontAttributeName : [UIFont systemFontOfSize:fontSize]};

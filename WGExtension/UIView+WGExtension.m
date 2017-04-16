@@ -12,13 +12,13 @@
 /** 
  * 坐标
  */
-- (void)setOrigin:(CGPoint)origin {
+- (void)setWg_origin:(CGPoint)wg_origin {
 
     CGRect frame = self.frame;
-    frame.origin = origin;
+    frame.origin = wg_origin;
     self.frame = frame;
 }
-- (CGPoint)origin {
+- (CGPoint)wg_origin {
 
     return self.frame.origin;
 }
@@ -26,13 +26,13 @@
 /**
  * x坐标
  */
-- (void)setX:(CGFloat)x {
+- (void)setWg_x:(CGFloat)wg_x {
     
     CGRect frame = self.frame;
-    frame.origin.x = x;
+    frame.origin.x = wg_x;
     self.frame = frame;
 }
-- (CGFloat)x {
+- (CGFloat)wg_x {
     
     return self.frame.origin.x;
 }
@@ -40,13 +40,13 @@
 /**
  * y坐标
  */
-- (void)setY:(CGFloat)y {
+- (void)setWg_y:(CGFloat)wg_y {
     
     CGRect frame = self.frame;
-    frame.origin.y = y;
+    frame.origin.y = wg_y;
     self.frame = frame;
 }
-- (CGFloat)y {
+- (CGFloat)wg_y {
     
     return self.frame.origin.y;
 }
@@ -54,13 +54,13 @@
 /**
  * 尺寸
  */
-- (void)setSize:(CGSize)size {
+- (void)setWg_size:(CGSize)wg_size {
     
     CGRect frame = self.frame;
-    frame.size = size;
+    frame.size = wg_size;
     self.frame = frame;
 }
-- (CGSize)size {
+- (CGSize)wg_size {
     
     return self.frame.size;
 }
@@ -68,13 +68,13 @@
 /**
  * 宽度
  */
-- (void)setWidth:(CGFloat)width {
+- (void)setWg_width:(CGFloat)wg_width {
     
     CGRect frame = self.frame;
-    frame.size.width = width;
+    frame.size.width = wg_width;
     self.frame = frame;
 }
-- (CGFloat)width {
+- (CGFloat)wg_width {
     
     return self.frame.size.width;
 }
@@ -82,13 +82,13 @@
 /**
  * 高度
  */
-- (void)setHeight:(CGFloat)height {
+- (void)setWg_height:(CGFloat)wg_height {
     
     CGRect frame = self.frame;
-    frame.size.height = height;
+    frame.size.height = wg_height;
     self.frame = frame;
 }
-- (CGFloat)height {
+- (CGFloat)wg_height {
     
     return self.frame.size.height;
 }
@@ -96,13 +96,13 @@
 /**
  * 中心x坐标
  */
-- (void)setCenterX:(CGFloat)centerX {
+- (void)setWg_centerX:(CGFloat)wg_centerX {
     
     CGPoint center = self.center;
-    center.x = centerX;
+    center.x = wg_centerX;
     self.center = center;
 }
-- (CGFloat)centerX {
+- (CGFloat)wg_centerX {
     
     return self.center.x;
 }
@@ -110,15 +110,55 @@
 /**
  * 中心y坐标
  */
-- (void)setCenterY:(CGFloat)centerY {
+- (void)setWg_centerY:(CGFloat)wg_centerY {
     
     CGPoint center = self.center;
-    center.y = centerY;
+    center.y = wg_centerY;
     self.center = center;
 }
-- (CGFloat)centerY {
+- (CGFloat)wg_centerY {
     
     return self.center.y;
+}
+
+/** 
+ * 顶端坐标(等同y坐标) 
+ */
+- (void)setWg_top:(CGFloat)wg_top {
+
+    [self setWg_y:wg_top];
+}
+- (CGFloat)wg_top {
+
+    return [self wg_y];
+}
+
+/**
+ * 左端坐标(等同x坐标)
+ */
+- (void)setWg_left:(CGFloat)wg_left {
+    
+    [self setWg_x:wg_left];
+}
+- (CGFloat)wg_left {
+    
+    return [self wg_x];
+}
+
+/**
+ * 底端坐标
+ */
+- (CGFloat)wg_bottom {
+    
+    return CGRectGetMaxY(self.frame);
+}
+
+/**
+ * 右端坐标
+ */
+- (CGFloat)wg_right {
+
+    return CGRectGetMaxX(self.frame);
 }
 
 /**
