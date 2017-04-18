@@ -44,6 +44,12 @@
             NSString *keyStr = (NSString *)key;
             dicM[keyStr] = [self changeFromArray:arr];
         }
+        // 如果内有字符串, 则直接替换为可变字符串
+        else if ([obj isKindOfClass:[NSString class]]) {
+        
+            NSString *str = (NSString *)obj;
+            dicM[key] = [NSMutableString stringWithString:str];
+        }
     }];
     
     // 遍历完成后返回
@@ -74,6 +80,12 @@
             
             NSArray *arr = (NSArray *)obj;
             arrM[idx] = [self changeFromArray:arr];
+        }
+        // 如果内有字符串, 则直接替换为可变字符串
+        else if ([obj isKindOfClass:[NSString class]]) {
+            
+            NSString *str = (NSString *)obj;
+            arrM[idx] = [NSMutableString stringWithString:str];
         }
     }];
     
