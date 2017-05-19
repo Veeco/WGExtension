@@ -7,7 +7,7 @@
 
 // 说明:
 // 1. 在导入 WGExtension.h 前导入全局宏 WG_SHORTHAND 可省略掉wg_前缀更为方便地调用属性, 但系统本来的同名属性将不能使用.
-//
+
 #import "UIView+WGExtension.h"
 #import "NSString+WGExtension.h"
 #import "UILabel+WGExtension.h"
