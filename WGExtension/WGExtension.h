@@ -11,6 +11,7 @@
 #import "UIView+WGExtension.h"
 #import "NSString+WGExtension.h"
 #import "UILabel+WGExtension.h"
+#import "UIImage+WGExtension.h"
 
 #ifdef WG_SHORTHAND
 
