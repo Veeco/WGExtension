@@ -17,6 +17,6 @@
  * 返回 圆形图片
  * 注意 边框宽度会在原图基础外围添加, 即如果传入 borderWidth 会导致返回图片宽高变大; 传入原图不为正方形时, 会以较长一边作为基准
  */
-+ (nonnull UIImage *)imageRoundWithImage:(nonnull UIImage *)image borderWidth:(CGFloat)borderWidth borderColor:(nullable UIColor *)borderColor;
++ (nonnull UIImage *)wg_imageRoundWithImage:(nonnull UIImage *)image borderWidth:(CGFloat)borderWidth borderColor:(nullable UIColor *)borderColor;
 
 @end
