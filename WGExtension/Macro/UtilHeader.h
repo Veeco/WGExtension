@@ -54,4 +54,22 @@
 #define weakify(object) __weak __typeof__(object) weak##_##object = object;
 #define strongify(object) __strong __typeof__(object) object = weak##_##object;
 
+// 单例
+#define Singleton(Class) \
+static Class *_instance; \
+\
++ (Class *)shared { \
+\
+return [[self alloc] init]; \
+} \
+\
++ (instancetype)allocWithZone:(struct _NSZone *)zone { \
+\
+static dispatch_once_t onceToken; \
+dispatch_once(&onceToken, ^{ \
+_instance = [super allocWithZone:zone]; \
+}); \
+return _instance; \
+}
+
 #endif /* UtilHeader_h */
