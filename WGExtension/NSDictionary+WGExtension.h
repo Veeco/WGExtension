@@ -13,6 +13,6 @@
  * 返回超级字典(字典中的所有子字典子数组子字符串均为可变对象)
  * 返回 超级字典
  */
-- (nonnull NSMutableDictionary *)superCopy;
+- (nonnull NSMutableDictionary *)wg_superCopy;
 
 @end

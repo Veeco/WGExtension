@@ -14,6 +14,6 @@
  * 参数 array 原数组
  * 返回 超级数组
  */
-- (nonnull NSMutableArray *)superCopy;
+- (nonnull NSMutableArray *)wg_superCopy;
 
 @end
