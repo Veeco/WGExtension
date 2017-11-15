@@ -13,7 +13,12 @@
 
 @implementation UUID
 
-+ (NSString *)getUUID {
+/**
+ 获取UUID
+ 
+ @return UUID
+ */
++ (nonnull NSString *)getUUID {
     
     NSString *UUID = (NSString *)[KeyChainStore loadDataWithKey:kUUIDKey];
     

@@ -10,6 +10,11 @@
 
 @interface UUID : NSObject
 
-@property (class, nonnull, nonatomic, readonly) NSString *getUUID;
+/**
+ 获取UUID
+
+ @return UUID
+ */
++ (nonnull NSString *)getUUID;
 
 @end

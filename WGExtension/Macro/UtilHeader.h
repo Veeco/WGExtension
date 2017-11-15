@@ -11,11 +11,11 @@
 
 // 打印
 #ifdef DEBUG
-#define DLog(FORMAT, ...) fprintf(stderr, "%s : %d\t%s\n", [[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
-#define DLogFunc NSLog(@"%s", __func__);
+#define Log(FORMAT, ...) fprintf(stderr, "%s : %d\t%s\n", [[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#define LogFunc NSLog(@"%s", __func__);
 #else
-#define DLog(...)
-#define DLogFunc
+#define Log(...)
+#define LogFunc
 #endif
 
 // 窗口
@@ -51,19 +51,19 @@
 #define AppVersion NSBundle.mainBundle.infoDictionary[@"CFBundleShortVersionString"] // 发布版本
 
 // 弱指针
-#define weakify(object) __weak __typeof__(object) weak##_##object = object;
-#define strongify(object) __strong __typeof__(object) object = weak##_##object;
+#define Weak(object) __weak __typeof__(object) weak##_##object = object;
+#define Strong(object) __strong __typeof__(object) object = weak##_##object;
 
 // 单例
 #define Singleton(Class) \
-static Class *_instance; \
+static __kindof Class * _instance; \
 \
-+ (Class *)shared { \
++ (__kindof Class *)shared { \
 \
 return [[self alloc] init]; \
 } \
 \
-+ (instancetype)allocWithZone:(struct _NSZone *)zone { \
++ (__kindof Class *)allocWithZone:(struct _NSZone *)zone { \
 \
 static dispatch_once_t onceToken; \
 dispatch_once(&onceToken, ^{ \

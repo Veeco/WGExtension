@@ -126,7 +126,7 @@
  */
 - (void)setTop:(CGFloat)top {
 
-    [self setY:top];
+    self.y = top;
 }
 - (CGFloat)top {
 
@@ -138,7 +138,7 @@
  */
 - (void)setLeft:(CGFloat)left {
     
-    [self setX:left];
+    self.x = left;
 }
 - (CGFloat)left {
     
