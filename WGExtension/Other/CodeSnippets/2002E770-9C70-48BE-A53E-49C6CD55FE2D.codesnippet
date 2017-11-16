@@ -3,23 +3,30 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>assign</string>
+	<string>lazy</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>/** &lt;#Description#&gt; */
-@property (assign, nonatomic) &lt;#Class#&gt; *&lt;#name#&gt;;</string>
+	<string>- (&lt;#Class#&gt;)&lt;#name#&gt; {
+    if (!_&lt;#name#&gt;) {
+        
+        &lt;#Class#&gt; *&lt;#name#&gt; = [&lt;#Class#&gt; new];
+        [self.view addSubview:&lt;#name#&gt;];
+        self.&lt;#name#&gt; = &lt;#name#&gt;;
+    }
+    return _&lt;#name#&gt;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>1C68A05F-84D9-4227-AFF2-3F324127728A</string>
+	<string>2002E770-9C70-48BE-A53E-49C6CD55FE2D</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Assign</string>
+	<string>Lazy</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
