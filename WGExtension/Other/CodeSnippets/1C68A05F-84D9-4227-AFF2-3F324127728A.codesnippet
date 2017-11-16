@@ -10,7 +10,7 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>/** &lt;#Description#&gt; */
-@property (assign, nonatomic) &lt;#Class#&gt; *&lt;#name#&gt;;</string>
+@property (assign, nonatomic) &lt;#Class#&gt; &lt;#name#&gt;;</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>1C68A05F-84D9-4227-AFF2-3F324127728A</string>
 	<key>IDECodeSnippetLanguage</key>
