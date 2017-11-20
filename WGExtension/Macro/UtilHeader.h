@@ -24,22 +24,22 @@
 #define SCREEN_HEIGHT UIScreen.mainScreen.bounds.size.height
 
 // 屏幕类型
-#define SCREEN_4_0 (SCREEN_WIDTH == 320.0f) // 320 * 568 -> 640 * 1136
-#define SCREEN_4_7 (SCREEN_WIDTH == 375.0f) // 375 * 667 -> 750 * 1334
-#define SCREEN_5_5 (SCREEN_WIDTH == 414.0f) // 414 * 736 -> 1242 * 2208 -> 1080 * 1920
-#define SCREEN_5_8 (SCREEN_HEIGHT == 812.0f) // 375 * 812 -> 1125 * 2436
+#define SCREEN_4_0 (SCREEN_WIDTH == 320) // 320 * 568 -> 640 * 1136
+#define SCREEN_4_7 (SCREEN_WIDTH == 375) // 375 * 667 -> 750 * 1334
+#define SCREEN_5_5 (SCREEN_WIDTH == 414) // 414 * 736 -> 1242 * 2208 -> 1080 * 1920
+#define SCREEN_5_8 (SCREEN_HEIGHT == 812) // 375 * 812 -> 1125 * 2436
 
 // 系统版本
 #define IOS_SINCE(VERSION) @available(iOS VERSION, *)
 
 // 常用区域尺寸
-#define STATUS_BAR_HEIGHT (SCREEN_5_8 ? 44.0f : 20.0f) // 状态栏高度
-#define NAV_BAR_HEIGHT (44.0f + STATUS_BAR_HEIGHT) // 导航栏高度(包含状态栏)
-#define BOTTOM_SAFE_MARGIN (SCREEN_5_8 ? 34.0f : 0.0f) // 底部安全间隙
-#define TAB_BAR_HEIGHT (49.0f + BOTTOM_SAFE_MARGIN) // 标签栏高度(包含底部安全间隙)
+#define STATUS_BAR_HEIGHT (SCREEN_5_8 ? 44 : 20) // 状态栏高度
+#define NAV_BAR_HEIGHT (44 + STATUS_BAR_HEIGHT) // 导航栏高度(包含状态栏)
+#define BOTTOM_SAFE_MARGIN (SCREEN_5_8 ? 34 : 0) // 底部安全间隙
+#define TAB_BAR_HEIGHT (49 + BOTTOM_SAFE_MARGIN) // 标签栏高度(包含底部安全间隙)
 
 // 获取对应比例的像素(参数 x 为 4.7屏 下的开发像素)
-#define SCREEN_SCALE(VALUE) (VALUE / 375.0f * SCREEN_WIDTH)
+#define SCREEN_SCALE(VALUE) ((VALUE) / 375.0f * SCREEN_WIDTH)
 #define SS(VALUE) SCREEN_SCALE(VALUE)
 
 // 字体
