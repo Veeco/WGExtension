@@ -72,7 +72,7 @@ kInstance = [super allocWithZone:zone]; \
 return kInstance; \
 }
 
-// 默认初始异常
+// 默认初始化异常
 #define INITEXC \
 - (instancetype)init { \
     if (self = [super init]) { \
