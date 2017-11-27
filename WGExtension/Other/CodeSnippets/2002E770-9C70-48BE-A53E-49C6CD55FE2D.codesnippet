@@ -13,10 +13,10 @@
     if (!_&lt;#name#&gt;) {
         
         &lt;#Class#&gt; *&lt;#name#&gt; = [&lt;#Class#&gt; new];
-        [self.view addSubview:&lt;#name#&gt;];
+        [self addSubview:&lt;#name#&gt;];
         self.&lt;#name#&gt; = &lt;#name#&gt;;
     }
-    return _&lt;#name#&gt;
+    return _&lt;#name#&gt;;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>2002E770-9C70-48BE-A53E-49C6CD55FE2D</string>
@@ -27,6 +27,6 @@
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>0</integer>
+	<integer>2</integer>
 </dict>
 </plist>
