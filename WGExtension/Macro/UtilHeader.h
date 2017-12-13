@@ -77,7 +77,7 @@ return kInstance; \
 - (instancetype)init { \
     if (self = [super init]) { \
 \
-        [NSException raise:@"初始化异常" format:@"请使用自定义构造器"]; \
+        [NSException raise:@"初始化异常" format:@"请使用自定义初始方法"]; \
     } \
     return self; \
 }
