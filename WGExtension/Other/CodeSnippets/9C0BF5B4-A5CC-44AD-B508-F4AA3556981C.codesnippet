@@ -10,7 +10,7 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>/** 单例 */
-@property (class, nonnull, nonatomic, readonly) __kindof &lt;#Class#&gt; *&lt;#name#&gt;;</string>
+@property (class, nonnull, nonatomic, readonly) __kindof &lt;#Class#&gt; *singleton&lt;#name#&gt;;</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>9C0BF5B4-A5CC-44AD-B508-F4AA3556981C</string>
 	<key>IDECodeSnippetLanguage</key>
