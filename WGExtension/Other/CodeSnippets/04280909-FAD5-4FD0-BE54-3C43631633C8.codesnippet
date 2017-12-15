@@ -10,7 +10,7 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>/** 代理 */
-@property (nullable, nonatomic, weak) id &lt;&lt;#Protocol#&gt;&gt; delegate;</string>
+@property (nullable, nonatomic, weak) NSObject &lt;&lt;#Protocol#&gt;&gt;* delegate;</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>04280909-FAD5-4FD0-BE54-3C43631633C8</string>
 	<key>IDECodeSnippetLanguage</key>
