@@ -3,7 +3,7 @@
 //  PuChi
 //
 //  Created by Veeco on 17/11/14.
-//  Copyright © 2017年 ChenXi. All rights reserved.
+//  Copyright © 2017年 Chance. All rights reserved.
 //
 
 #import "KeyChainStore.h"
@@ -68,12 +68,8 @@
 }
 
 + (NSMutableDictionary *)getKeychainQuery:(NSString *)service {
-    return [NSMutableDictionary dictionaryWithObjectsAndKeys:
-            (id)kSecClassGenericPassword,(id)kSecClass,
-            service, (id)kSecAttrService,
-            service, (id)kSecAttrAccount,
-            (id)kSecAttrAccessibleAfterFirstUnlock,(id)kSecAttrAccessible,
-            nil];
+    
+    return [NSMutableDictionary dictionaryWithObjectsAndKeys:(id)kSecClassGenericPassword, (id)kSecClass, service, (id)kSecAttrService, service, (id)kSecAttrAccount, (id)kSecAttrAccessibleAfterFirstUnlock, (id)kSecAttrAccessible, nil];
 }
 
 @end
