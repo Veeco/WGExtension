@@ -3,23 +3,34 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>delegate</string>
+	<string>Delegates</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>/** 代理 */
-@property (nullable, nonatomic, weak) NSObject&lt;&lt;#Protocol#&gt;&gt; *delegate;</string>
+	<string>/**
+ 添加代理
+ 
+ @param delegate 代理
+ */
++ (void)addDelegate:(nonnull NSObject&lt;&lt;#Protocol#&gt;&gt; *)delegate;
+
+/**
+ 移除代理
+ 
+ @param delegate 代理
+ */
++ (void)removeDelegate:(nonnull NSObject&lt;&lt;#Protocol#&gt;&gt; *)delegate;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>04280909-FAD5-4FD0-BE54-3C43631633C8</string>
+	<string>C12A5484-610A-48D4-A470-AACDC2C27264</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Delegate</string>
+	<string>Delegates</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

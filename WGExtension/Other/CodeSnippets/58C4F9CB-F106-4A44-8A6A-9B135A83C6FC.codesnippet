@@ -3,20 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>delegate</string>
+	<string>ignore</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>/** 代理 */
-@property (nullable, nonatomic, weak) NSObject&lt;&lt;#Protocol#&gt;&gt; *delegate;</string>
+	<string>#pragma clang diagnostic push
+#pragma clang diagnostic ignored"-Wdeprecated-declarations"
+&lt;#code#&gt;
+#pragma clang diagnostic pop</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>04280909-FAD5-4FD0-BE54-3C43631633C8</string>
+	<string>58C4F9CB-F106-4A44-8A6A-9B135A83C6FC</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Delegate</string>
+	<string>Ignore</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

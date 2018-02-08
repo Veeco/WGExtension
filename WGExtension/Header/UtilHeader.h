@@ -56,7 +56,7 @@
 
 // 单例
 #define SINGLETON(CLASS) \
-static __kindof CLASS * kInstance; \
+static CLASS *kInstance; \
 \
 + (__kindof CLASS *)shared { \
 \
@@ -81,5 +81,8 @@ return kInstance; \
     } \
     return self; \
 }
+
+// 自动提示宏
+#define HINT_MACRO(OBJC, KEYPATH) @(((void)OBJC.KEYPATH, #KEYPATH))
 
 #endif /* UtilHeader_h */
