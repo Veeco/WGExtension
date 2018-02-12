@@ -1,5 +1,5 @@
 //
-//  UUID.h
+//  UUIDHelper.h
 //  PuChi
 //
 //  Created by Veeco on 2017/11/14.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface UUID : NSObject
+@interface UUIDHelper : NSObject
 
 /**
  获取UUID

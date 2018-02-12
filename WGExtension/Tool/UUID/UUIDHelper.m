@@ -1,17 +1,17 @@
 //
-//  UUID.m
+//  UUIDHelper.m
 //  PuChi
 //
 //  Created by Veeco on 2017/11/14.
 //  Copyright © 2017年 Chance. All rights reserved.
 //
 
-#import "UUID.h"
+#import "UUIDHelper.h"
 #import "KeyChainStore.h"
 
 #define kUUIDKey @"kUUIDKey"
 
-@implementation UUID
+@implementation UUIDHelper
 
 /**
  获取UUID
