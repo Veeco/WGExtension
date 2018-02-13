@@ -11,3 +11,4 @@
 #import "UIImage+WGExtension.h"
 #import "NSArray+WGExtension.h"
 #import "NSDictionary+WGExtension.h"
+#import "UITableView+WGExtension.h"
