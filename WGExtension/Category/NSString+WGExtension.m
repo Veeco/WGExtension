@@ -16,7 +16,7 @@
  
  @return md5化后的字符串
  */
-- (nonnull NSString *)md5 {
+- (nonnull NSString *)wg_md5 {
     
     const char *cStr = [self UTF8String];
     unsigned char buff[16];
@@ -27,7 +27,7 @@
         
         [result appendFormat:@"%02x", buff[i]];
     }
-    return result.uppercaseString;
+    return result;
 }
 
 /**
@@ -35,7 +35,7 @@
  
  @return 文件夹路径
  */
-- (nonnull NSString *)makeCacheDir {
+- (nonnull NSString *)wg_makeCacheDir {
     
     NSString *path = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).lastObject;
     NSString *filePath = [path stringByAppendingPathComponent:self];

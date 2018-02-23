@@ -12,31 +12,47 @@
 // 打印
 #ifdef DEBUG
 #define LOG(FORMAT, ...) fprintf(stderr, "%s : %d\t%s\n", [[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
-#define LOG_FUNC NSLog(@"%s", __func__);
+#define LOG_FUNC LOG(@"%s", __func__)
 #else
 #define LOG(...)
 #define LOG_FUNC
 #endif
 
 // 窗口
-#define KEY_WINDOW UIApplication.sharedApplication.keyWindow
+#define DELEGATE_WINDOW UIApplication.sharedApplication.delegate.window
 #define SCREEN_WIDTH UIScreen.mainScreen.bounds.size.width
 #define SCREEN_HEIGHT UIScreen.mainScreen.bounds.size.height
 
 // 屏幕类型
-#define SCREEN_4_0 (SCREEN_WIDTH == 320) // 320 * 568 -> 640 * 1136
-#define SCREEN_4_7 (SCREEN_WIDTH == 375) // 375 * 667 -> 750 * 1334
-#define SCREEN_5_5 (SCREEN_WIDTH == 414) // 414 * 736 -> 1242 * 2208 -> 1080 * 1920
-#define SCREEN_5_8 (SCREEN_HEIGHT == 812) // 375 * 812 -> 1125 * 2436
+// 320 * 480 -> 640 * 960
+#define SCREEN_3_5 ((SCREEN_WIDTH == 320 && SCREEN_HEIGHT == 480) || (SCREEN_WIDTH == 480 && SCREEN_HEIGHT == 320))
+// 320 * 568 -> 640 * 1136
+#define SCREEN_4_0 ((SCREEN_WIDTH == 320 && SCREEN_HEIGHT == 568) || (SCREEN_WIDTH == 568 && SCREEN_HEIGHT == 320))
+// 375 * 667 -> 750 * 1334
+#define SCREEN_4_7 ((SCREEN_WIDTH == 375 && SCREEN_HEIGHT == 667) || (SCREEN_WIDTH == 667 && SCREEN_HEIGHT == 375))
+// 414 * 736 -> 1242 * 2208 -> 1080 * 1920
+#define SCREEN_5_5 ((SCREEN_WIDTH == 414 && SCREEN_HEIGHT == 736) || (SCREEN_WIDTH == 736 && SCREEN_HEIGHT == 414))
+// 375 * 812 -> 1125 * 2436
+#define SCREEN_5_8 ((SCREEN_WIDTH == 375 && SCREEN_HEIGHT == 812) || (SCREEN_WIDTH == 812 && SCREEN_HEIGHT == 375))
+// 414 * 896 -> 828 * 1792
+#define SCREEN_6_1 ((SCREEN_WIDTH == 414 && SCREEN_HEIGHT == 896) || (SCREEN_WIDTH == 896 && SCREEN_HEIGHT == 414))
+// 414 * 896 -> 1242 * 2688
+#define SCREEN_6_5 ((SCREEN_WIDTH == 414 && SCREEN_HEIGHT == 896) || (SCREEN_WIDTH == 896 && SCREEN_HEIGHT == 414))
+// 留海屏
+#define SCREEN_NEW (SCREEN_5_8 || SCREEN_6_1 || SCREEN_6_5)
+
+#define PORTRAIT (SCREEN_WIDTH < SCREEN_HEIGHT) // 竖屏
+#define LANDSCAPE (SCREEN_WIDTH > SCREEN_HEIGHT) // 横屏
 
 // 系统版本
 #define IOS_SINCE(VERSION) @available(iOS VERSION, *)
 
 // 常用区域尺寸
-#define STATUS_BAR_HEIGHT (SCREEN_5_8 ? 44 : 20) // 状态栏高度
-#define NAV_BAR_HEIGHT (44 + STATUS_BAR_HEIGHT) // 导航栏高度(包含状态栏)
-#define BOTTOM_SAFE_MARGIN (SCREEN_5_8 ? 34 : 0) // 底部安全间隙
-#define TAB_BAR_HEIGHT (49 + BOTTOM_SAFE_MARGIN) // 标签栏高度(包含底部安全间隙)
+#define STATUS_BAR_HEIGHT (PORTRAIT ? (SCREEN_NEW ? 44 : 20) : 0) // 状态栏高度
+#define NAV_BAR_HEIGHT ((PORTRAIT ? 44 : 32) + STATUS_BAR_HEIGHT) // 导航栏高度(包含状态栏)
+#define NAV_BAR_HEIGHT_OFFSET ((SCREEN_NEW && PORTRAIT) ? 24 : 0) // 状态栏高度偏差
+#define BOTTOM_SAFE_MARGIN ((SCREEN_NEW && PORTRAIT) ? 34 : 0) // 底部安全间隙
+#define TAB_BAR_HEIGHT (45 + BOTTOM_SAFE_MARGIN) // 标签栏高度(包含底部安全间隙)
 
 // 获取对应比例的像素(参数 x 为 4.7屏 下的开发像素)
 #define SCREEN_SCALE(VALUE) ((VALUE) / 375.0f * SCREEN_WIDTH)

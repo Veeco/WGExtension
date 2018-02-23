@@ -15,13 +15,13 @@
 
  @return md5化后的字符串
  */
-- (nonnull NSString *)md5;
+- (nonnull NSString *)wg_md5;
 
 /**
  在Cache下创建自身同名文件夹
  
  @return 文件夹路径
  */
-- (nonnull NSString *)makeCacheDir;
+- (nonnull NSString *)wg_makeCacheDir;
 
 @end

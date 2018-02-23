@@ -15,7 +15,7 @@
  
  @return 默认偏差值
  */
-- (CGPoint)getDefaultContentOffset {
+- (CGPoint)wg_getDefaultContentOffset {
     
     CGFloat offsetY = 0;
     

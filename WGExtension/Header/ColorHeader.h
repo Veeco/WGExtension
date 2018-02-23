@@ -20,7 +20,7 @@
 static inline
 UIColor * UIColorMakeFromRGB(int rgb)
 {
-    return [UIColor colorWithRed:(rgb & 0xFF0000 >> 16) / 255.0f green:(rgb & 0xFF00 >> 8) / 255.0f blue:(rgb & 0xFF) / 255.0f alpha:1];
+    return [UIColor colorWithRed:((rgb & 0xFF0000) >> 16) / 255.0f green:((rgb & 0xFF00) >> 8) / 255.0f blue:(rgb & 0xFF) / 255.0f alpha:1];
 }
 
 /**
@@ -33,7 +33,7 @@ UIColor * UIColorMakeFromRGB(int rgb)
 static inline
 UIColor * UIColorMakeFromRGBA(int rgb, float alpha)
 {
-    return [UIColor colorWithRed:(rgb & 0xFF0000 >> 16) / 255.0f green:(rgb & 0xFF00 >> 8) / 255.0f blue:(rgb & 0xFF) / 255.0f alpha:alpha];
+    return [UIColor colorWithRed:((rgb & 0xFF0000) >> 16) / 255.0f green:((rgb & 0xFF00) >> 8) / 255.0f blue:(rgb & 0xFF) / 255.0f alpha:alpha];
 }
 
 /**

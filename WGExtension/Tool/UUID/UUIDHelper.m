@@ -9,7 +9,8 @@
 #import "UUIDHelper.h"
 #import "KeyChainStore.h"
 
-#define kUUIDKey @"kUUIDKey"
+// UUID Key
+static NSString *const kUUIDKey = @"kUUIDKey";
 
 @implementation UUIDHelper
 
@@ -27,6 +28,7 @@
         // 生成一个UUID
         CFUUIDRef UUIDRef = CFUUIDCreate(kCFAllocatorDefault);
         UUID = (NSString *)CFBridgingRelease(CFUUIDCreateString (kCFAllocatorDefault,UUIDRef));
+        UUID = UUID.lowercaseString;
         
         [KeyChainStore saveData:UUID withKey:kUUIDKey];
     }
