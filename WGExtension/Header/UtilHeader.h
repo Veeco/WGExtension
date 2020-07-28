@@ -72,20 +72,29 @@
 
 // 单例
 #define SINGLETON(CLASS) \
-static CLASS *kInstance; \
-\
-+ (__kindof CLASS *)shared { \
-\
-return [[self alloc] init]; \
++ (__kindof CLASS *)sharedSingleton { \
+ \
+    return [[self alloc] init]; \
 } \
-\
+ \
 + (__kindof CLASS *)allocWithZone:(struct _NSZone *)zone { \
-\
-static dispatch_once_t onceToken; \
-dispatch_once(&onceToken, ^{ \
-kInstance = [super allocWithZone:zone]; \
-}); \
-return kInstance; \
+ \
+    static CLASS *kSharedSingleton; \
+    static dispatch_once_t onceToken; \
+    dispatch_once(&onceToken, ^{ \
+        kSharedSingleton = [super allocWithZone:zone]; \
+    }); \
+    return kSharedSingleton; \
+} \
+ \
+- (id)copyWithZone:(NSZone *)zone { \
+ \
+    return self; \
+} \
+ \
+- (id)mutableCopyWithZone:(NSZone *)zone { \
+ \
+    return self; \
 }
 
 // 默认初始化异常
