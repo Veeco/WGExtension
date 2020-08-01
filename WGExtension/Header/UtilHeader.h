@@ -50,8 +50,7 @@
 // 常用区域尺寸
 #define STATUS_BAR_HEIGHT (PORTRAIT ? (SCREEN_NEW ? 44 : 20) : 0) // 状态栏高度
 #define NAV_BAR_HEIGHT ((PORTRAIT ? 44 : 32) + STATUS_BAR_HEIGHT) // 导航栏高度(包含状态栏)
-#define NAV_BAR_HEIGHT_OFFSET ((SCREEN_NEW && PORTRAIT) ? 24 : 0) // 状态栏高度偏差
-#define BOTTOM_SAFE_MARGIN ((SCREEN_NEW && PORTRAIT) ? 34 : 0) // 底部安全间隙
+#define BOTTOM_SAFE_MARGIN (SCREEN_NEW ? (PORTRAIT ? 34 : 21) : 0) // 底部安全间隙
 #define TAB_BAR_HEIGHT (45 + BOTTOM_SAFE_MARGIN) // 标签栏高度(包含底部安全间隙)
 
 // 获取对应比例的像素(参数 x 为 4.7屏 下的开发像素)
