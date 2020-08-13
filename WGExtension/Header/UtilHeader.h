@@ -48,7 +48,8 @@
 #define IOS_SINCE(VERSION) @available(iOS VERSION, *)
 
 // 常用区域尺寸
-#define STATUS_BAR_HEIGHT (PORTRAIT ? (SCREEN_NEW ? 44 : 20) : 0) // 状态栏高度
+#define STATUS_BAR_OFFSET (SCREEN_NEW ? 24 : 0) // 与旧屏状态栏高度差
+#define STATUS_BAR_HEIGHT (PORTRAIT ? (20 + STATUS_BAR_OFFSET) : 0) // 状态栏高度
 #define NAV_BAR_HEIGHT ((PORTRAIT ? 44 : 32) + STATUS_BAR_HEIGHT) // 导航栏高度(包含状态栏)
 #define BOTTOM_SAFE_MARGIN (SCREEN_NEW ? (PORTRAIT ? 34 : 21) : 0) // 底部安全间隙
 #define TAB_BAR_HEIGHT (45 + BOTTOM_SAFE_MARGIN) // 标签栏高度(包含底部安全间隙)
