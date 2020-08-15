@@ -43,7 +43,14 @@
             *stop = YES;
         }
     }];
-    [anInvocation invokeWithTarget:target];
+    if (target) {
+        
+        [anInvocation invokeWithTarget:target];
+    }
+    else {
+        
+        [self wg_forwardInvocation:anInvocation];
+    }
 }
 
 @end
