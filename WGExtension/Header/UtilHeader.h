@@ -53,6 +53,7 @@
 #define NAV_BAR_HEIGHT ((PORTRAIT ? 44 : 32) + STATUS_BAR_HEIGHT) // 导航栏高度(包含状态栏)
 #define BOTTOM_SAFE_MARGIN (SCREEN_NEW ? (PORTRAIT ? 34 : 21) : 0) // 底部安全间隙
 #define TAB_BAR_HEIGHT (45 + BOTTOM_SAFE_MARGIN) // 标签栏高度(包含底部安全间隙)
+#define LEFT_RIGHT_SAFE_MARGIN (LANDSCAPE ? 44 : 0) // 左右安全间隙
 
 // 获取对应比例的像素(参数 x 为 4.7屏 下的开发像素)
 #define SCREEN_SCALE(VALUE) ((VALUE) / 375.0f * SCREEN_WIDTH)
