@@ -18,55 +18,6 @@
 #define LOG_FUNC
 #endif
 
-// 窗口
-#define DELEGATE_WINDOW UIApplication.sharedApplication.delegate.window
-#define SCREEN_WIDTH UIScreen.mainScreen.bounds.size.width
-#define SCREEN_HEIGHT UIScreen.mainScreen.bounds.size.height
-
-// 屏幕类型
-// 320 * 480 -> 640 * 960
-#define SCREEN_3_5 ((SCREEN_WIDTH == 320 && SCREEN_HEIGHT == 480) || (SCREEN_WIDTH == 480 && SCREEN_HEIGHT == 320))
-// 320 * 568 -> 640 * 1136
-#define SCREEN_4_0 ((SCREEN_WIDTH == 320 && SCREEN_HEIGHT == 568) || (SCREEN_WIDTH == 568 && SCREEN_HEIGHT == 320))
-// 375 * 667 -> 750 * 1334
-#define SCREEN_4_7 ((SCREEN_WIDTH == 375 && SCREEN_HEIGHT == 667) || (SCREEN_WIDTH == 667 && SCREEN_HEIGHT == 375))
-// 414 * 736 -> 1242 * 2208 -> 1080 * 1920
-#define SCREEN_5_5 ((SCREEN_WIDTH == 414 && SCREEN_HEIGHT == 736) || (SCREEN_WIDTH == 736 && SCREEN_HEIGHT == 414))
-// 375 * 812 -> 1125 * 2436
-#define SCREEN_5_8 ((SCREEN_WIDTH == 375 && SCREEN_HEIGHT == 812) || (SCREEN_WIDTH == 812 && SCREEN_HEIGHT == 375))
-// 414 * 896 -> 828 * 1792
-#define SCREEN_6_1 ((SCREEN_WIDTH == 414 && SCREEN_HEIGHT == 896) || (SCREEN_WIDTH == 896 && SCREEN_HEIGHT == 414))
-// 414 * 896 -> 1242 * 2688
-#define SCREEN_6_5 ((SCREEN_WIDTH == 414 && SCREEN_HEIGHT == 896) || (SCREEN_WIDTH == 896 && SCREEN_HEIGHT == 414))
-// 留海屏
-#define SCREEN_NEW (SCREEN_5_8 || SCREEN_6_1 || SCREEN_6_5)
-
-#define PORTRAIT (SCREEN_WIDTH < SCREEN_HEIGHT) // 竖屏
-#define LANDSCAPE (SCREEN_WIDTH > SCREEN_HEIGHT) // 横屏
-
-// 系统版本
-#define IOS_SINCE(VERSION) @available(iOS VERSION, *)
-
-// 常用区域尺寸
-#define STATUS_BAR_OFFSET (SCREEN_NEW ? 24 : 0) // 与旧屏状态栏高度差
-#define STATUS_BAR_HEIGHT (PORTRAIT ? (20 + STATUS_BAR_OFFSET) : 0) // 状态栏高度
-#define NAV_BAR_HEIGHT ((PORTRAIT ? 44 : 32) + STATUS_BAR_HEIGHT) // 导航栏高度(包含状态栏)
-#define BOTTOM_SAFE_MARGIN (SCREEN_NEW ? (PORTRAIT ? 34 : 21) : 0) // 底部安全间隙
-#define TAB_BAR_HEIGHT (45 + BOTTOM_SAFE_MARGIN) // 标签栏高度(包含底部安全间隙)
-#define LEFT_RIGHT_SAFE_MARGIN (LANDSCAPE ? 44 : 0) // 左右安全间隙
-
-// 获取对应比例的像素(参数 x 为 4.7屏 下的开发像素)
-#define SCREEN_SCALE(VALUE) ((VALUE) / 375.0f * SCREEN_WIDTH)
-#define SS(VALUE) SCREEN_SCALE(VALUE)
-
-// 字体
-#define FONT_SIZE(SIZE) [UIFont systemFontOfSize:SIZE]
-#define BOLD_SIZE(SIZE) [UIFont boldSystemFontOfSize:SIZE]
-
-// 系统
-#define APP_BUILD NSBundle.mainBundle.infoDictionary[@"CFBundleVersion"] // 构建版本
-#define APP_VERSION NSBundle.mainBundle.infoDictionary[@"CFBundleShortVersionString"] // 发布版本
-
 // 弱指针
 #define WEAK(OBJECT) __weak __typeof(OBJECT) WEAK##_##OBJECT = OBJECT;
 #define STRONG(OBJECT) __strong __typeof(OBJECT) OBJECT = WEAK##_##OBJECT;
@@ -110,5 +61,93 @@
 
 // 自动提示宏
 #define HINT_MACRO(OBJC, KEYPATH) @(((void)OBJC.KEYPATH, #KEYPATH))
+
+// 系统版本
+#define IOS_SINCE(VERSION) @available(iOS VERSION, *)
+
+/// 获取代理窗口
+static inline
+UIWindow * _Nonnull DELEGATE_WINDOW()
+{
+    return UIApplication.sharedApplication.delegate.window;
+}
+
+/// 获取屏宽
+static inline
+CGFloat SCREEN_WIDTH()
+{
+    return UIScreen.mainScreen.bounds.size.width;
+}
+
+/// 获取屏高
+static inline
+CGFloat SCREEN_HEIGHT()
+{
+    return UIScreen.mainScreen.bounds.size.height;
+}
+
+/// 判断是否留海屏
+static inline
+BOOL SCREEN_NEW()
+{
+    CGFloat big = MAX(SCREEN_WIDTH(), SCREEN_HEIGHT());
+    CGFloat small = MIN(SCREEN_WIDTH(), SCREEN_HEIGHT());
+    
+    return (big / small) > 2;
+}
+
+/// 判断是否竖屏
+static inline
+BOOL PORTRAIT()
+{
+    return SCREEN_WIDTH() < SCREEN_HEIGHT();
+}
+
+/// 判断是否横屏
+static inline
+BOOL LANDSCAPE()
+{
+    return SCREEN_WIDTH() > SCREEN_HEIGHT();
+}
+
+/// 获取状态栏高度
+static inline
+CGFloat STATUS_BAR_HEIGHT() {
+    
+    return UIApplication.sharedApplication.statusBarFrame.size.height;
+}
+
+/// 获取与旧屏状态栏高度差
+static inline
+CGFloat STATUS_BAR_OFFSET()
+{
+    return PORTRAIT() ? STATUS_BAR_HEIGHT() - 20 : 0;
+}
+
+// 字体
+static inline
+UIFont * _Nonnull FONT_SIZE(SIZE)
+{
+    return [UIFont systemFontOfSize:SIZE];
+}
+static inline
+UIFont * _Nonnull BOLD_SIZE(SIZE)
+{
+    return [UIFont boldSystemFontOfSize:SIZE];
+}
+
+/// 构建版本
+static inline
+NSString * _Nonnull APP_BUILD()
+{
+    return NSBundle.mainBundle.infoDictionary[@"CFBundleVersion"];
+}
+
+/// 发布版本
+static inline
+NSString * _Nonnull APP_VERSION()
+{
+    return NSBundle.mainBundle.infoDictionary[@"CFBundleShortVersionString"];
+}
 
 #endif /* UtilHeader_h */

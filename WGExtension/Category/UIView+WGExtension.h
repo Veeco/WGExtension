@@ -10,34 +10,38 @@
 @interface UIView (WGExtension)
 
 /** 坐标 */
-@property (nonatomic, assign) CGPoint origin;
+@property (nonatomic, assign) CGPoint wg_origin;
 /** x坐标 */
-@property (nonatomic, assign) CGFloat x;
+@property (nonatomic, assign) CGFloat wg_x;
 /** y坐标 */
-@property (nonatomic, assign) CGFloat y;
+@property (nonatomic, assign) CGFloat wg_y;
 /** 尺寸 */
-@property (nonatomic, assign) CGSize size;
+@property (nonatomic, assign) CGSize wg_size;
 /** 宽度 */
-@property (nonatomic, assign) CGFloat width;
+@property (nonatomic, assign) CGFloat wg_width;
 /** 高度 */
-@property (nonatomic, assign) CGFloat height;
+@property (nonatomic, assign) CGFloat wg_height;
 /** 中心x坐标 */
-@property (nonatomic, assign) CGFloat centerX;
+@property (nonatomic, assign) CGFloat wg_centerX;
 /** 中心y坐标 */
-@property (nonatomic, assign) CGFloat centerY;
+@property (nonatomic, assign) CGFloat wg_centerY;
 /** 顶端坐标(等同y坐标) */
-@property (nonatomic, assign) CGFloat top;
+@property (nonatomic, assign) CGFloat wg_top;
 /** 左端坐标(等同x坐标) */
-@property (nonatomic, assign) CGFloat left;
+@property (nonatomic, assign) CGFloat wg_left;
 /** 底端坐标 */
-@property (nonatomic, assign, readonly) CGFloat bottom;
+@property (nonatomic, assign, readonly) CGFloat wg_bottom;
 /** 右端坐标 */
-@property (nonatomic, assign, readonly) CGFloat right;
-
+@property (nonatomic, assign, readonly) CGFloat wg_right;
+/** 安全间隙 */
+@property (nonatomic, assign, readonly) CGFloat wg_safeTop;
+@property (nonatomic, assign, readonly) CGFloat wg_safeLeft;
+@property (nonatomic, assign, readonly) CGFloat wg_safeBottom;
+@property (nonatomic, assign, readonly) CGFloat wg_safeRight;
 /**
  * 判断控件是否真正显示在主窗口
  * 返回 是否真正显示在主窗口
  */
-- (BOOL)wg_isShowingOnKeyWindow;
+@property (nonatomic, assign, readonly) BOOL wg_isShowingOnKeyWindow;
 
 @end
