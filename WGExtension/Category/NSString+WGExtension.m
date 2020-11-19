@@ -38,7 +38,11 @@
 - (nonnull NSString *)wg_makeCacheDir {
     
     NSString *path = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).lastObject;
-    NSString *filePath = [path stringByAppendingPathComponent:self];
+    NSMutableString *selfStr = self.mutableCopy;
+    if ([selfStr hasPrefix:path]) {
+        [selfStr deleteCharactersInRange:NSMakeRange(0, path.length)];
+    }
+    NSString *filePath = [path stringByAppendingPathComponent:selfStr];
     if (![[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
         [[NSFileManager defaultManager] createDirectoryAtPath:filePath withIntermediateDirectories:YES attributes:nil error:nil];
     }
