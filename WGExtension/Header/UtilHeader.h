@@ -67,73 +67,73 @@
 
 /// 获取代理窗口
 static inline
-UIWindow * _Nonnull DELEGATE_WINDOW()
+UIWindow * _Nonnull DelegateWindow()
 {
     return UIApplication.sharedApplication.delegate.window;
 }
 
 /// 获取屏宽
 static inline
-CGFloat SCREEN_WIDTH()
+CGFloat ScreenWidth()
 {
     return UIScreen.mainScreen.bounds.size.width;
 }
 
 /// 获取屏高
 static inline
-CGFloat SCREEN_HEIGHT()
+CGFloat ScreenHeight()
 {
     return UIScreen.mainScreen.bounds.size.height;
 }
 
 /// 判断是否留海屏
 static inline
-BOOL SCREEN_NEW()
+BOOL ScreenIsNew()
 {
-    CGFloat big = MAX(SCREEN_WIDTH(), SCREEN_HEIGHT());
-    CGFloat small = MIN(SCREEN_WIDTH(), SCREEN_HEIGHT());
+    CGFloat big = MAX(ScreenWidth(), ScreenHeight());
+    CGFloat small = MIN(ScreenWidth(), ScreenHeight());
     
     return (big / small) > 2;
 }
 
 /// 判断是否竖屏
 static inline
-BOOL PORTRAIT()
+BOOL OrientationIsPortrait()
 {
-    return SCREEN_WIDTH() < SCREEN_HEIGHT();
+    return ScreenWidth() < ScreenHeight();
 }
 
 /// 判断是否横屏
 static inline
-BOOL LANDSCAPE()
+BOOL OrientationIsLandscape()
 {
-    return SCREEN_WIDTH() > SCREEN_HEIGHT();
+    return ScreenWidth() > ScreenHeight();
 }
 
 /// 获取状态栏高度
 static inline
-CGFloat STATUS_BAR_HEIGHT() {
+CGFloat StatusBarHeight() {
     
     return UIApplication.sharedApplication.statusBarFrame.size.height;
 }
 
 /// 获取与旧屏状态栏高度差
 static inline
-CGFloat STATUS_BAR_OFFSET()
+CGFloat StatusBarOffset()
 {
-    return PORTRAIT() ? STATUS_BAR_HEIGHT() - 20 : 0;
+    return OrientationIsPortrait() ? StatusBarHeight() - 20 : 0;
 }
 
 // 字体
 static inline
-UIFont * _Nonnull FONT_SIZE(SIZE)
+UIFont * _Nonnull UIFontMake(CGFloat size)
 {
-    return [UIFont systemFontOfSize:SIZE];
+    return [UIFont systemFontOfSize:size];
 }
 static inline
-UIFont * _Nonnull BOLD_SIZE(SIZE)
+UIFont * _Nonnull UIFontBoldMake(CGFloat size)
 {
-    return [UIFont boldSystemFontOfSize:SIZE];
+    return [UIFont boldSystemFontOfSize:size];
 }
 
 /// 构建版本
