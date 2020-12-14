@@ -10,12 +10,11 @@
 #define UtilHeader_h
 
 // 打印
+#define LOG_FUNC NSLog(@"%s", __func__)
 #ifdef DEBUG
-#define LOG(FORMAT, ...) fprintf(stderr, "%s : %d\t%s\n", [[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
-#define LOG_FUNC LOG(@"%s", __func__)
+#define NSLog(FORMAT, ...) fprintf(stderr, "%s : %d\t%s\n", [[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
 #else
-#define LOG(...)
-#define LOG_FUNC
+#define NSLog(...)
 #endif
 
 // 弱指针
