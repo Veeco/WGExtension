@@ -27,4 +27,12 @@
  */
 - (nonnull UIImage *)wg_getTopImageWithWidth:(CGFloat)width topHeight:(CGFloat)topHeight;
 
+/**
+ 高斯模糊
+ 
+ @param value 模糊数值
+ @return 模糊后图片
+ */
+- (nullable UIImage *)wg_blurWithValue:(CGFloat)value;
+
 @end

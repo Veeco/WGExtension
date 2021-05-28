@@ -6,6 +6,7 @@
 //
 
 #import "UIImage+WGExtension.h"
+#import <Accelerate/Accelerate.h>
 
 @implementation UIImage (WGExtension)
 
@@ -69,6 +70,32 @@
     UIGraphicsEndImageContext();
     
     return image;
+}
+
+/**
+ 高斯模糊
+ 
+ @param value 模糊数值
+ @return 模糊后图片
+ */
+- (nullable UIImage *)wg_blurWithValue:(CGFloat)value {
+    
+    CIContext *context = [CIContext contextWithOptions:nil];
+    CIImage *inputImage = [CIImage imageWithCGImage:self.CGImage];
+    
+    // 设置filter
+    CIFilter *filter = [CIFilter filterWithName:@"CIGaussianBlur"];
+    [filter setValue:inputImage forKey:kCIInputImageKey];
+    [filter setValue:@(value) forKey: @"inputRadius"];
+    
+    // 模糊图片
+    CIImage *result = [filter valueForKey:kCIOutputImageKey];
+    CGFloat lwPadding = 0;
+    CGImageRef outImage = [context createCGImage:result fromRect:CGRectMake(lwPadding, lwPadding, self.size.width - lwPadding * 2, self.size.height - lwPadding * 2)];
+    UIImage *blurImage = [UIImage imageWithCGImage:outImage];
+    CGImageRelease(outImage);
+    
+    return blurImage;
 }
 
 @end

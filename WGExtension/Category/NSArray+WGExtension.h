@@ -17,3 +17,12 @@
 - (nonnull NSMutableArray *)wg_superCopy;
 
 @end
+
+@interface NSMutableArray (WGExtension)
+
+/**
+ 洗牌(乱序)
+ */
+- (void)shuffle;
+
+@end

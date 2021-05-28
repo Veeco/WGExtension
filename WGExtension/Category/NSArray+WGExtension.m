@@ -94,3 +94,22 @@
 }
 
 @end
+
+@implementation NSMutableArray (WGExtension)
+
+/**
+ 洗牌(乱序)
+ */
+- (void)shuffle {
+    
+    NSUInteger count = [self count];
+    
+    for (int i = 0; i < count; ++i) {
+        
+        int n = (arc4random() % (count - i)) + i;
+        
+        [self exchangeObjectAtIndex:i withObjectAtIndex:n];
+    }
+}
+
+@end

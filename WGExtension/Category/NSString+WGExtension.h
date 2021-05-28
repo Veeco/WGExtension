@@ -24,4 +24,25 @@
  */
 - (nonnull NSString *)wg_makeCacheDir;
 
+/**
+ sha1加密
+ 
+ @return 加密后的字符串
+ */
+- (nonnull NSString *)wg_sha1;
+
+/**
+ 判断 gif
+
+ @return 是否为 gif
+ */
+- (BOOL)wg_isGif;
+
+/**
+ 获取字节数
+
+ @return 字节数
+ */
+- (NSInteger)getBytes;
+
 @end
