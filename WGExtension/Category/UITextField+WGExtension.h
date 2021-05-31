@@ -26,6 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
  @return 是否有中文正在输入
  */
 - (BOOL)wg_handleChineseWithMaxWordsCount:(NSInteger)maxWordsCount;
+
 @end
 
 NS_ASSUME_NONNULL_END

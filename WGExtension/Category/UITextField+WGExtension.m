@@ -62,4 +62,5 @@
     }
     return range ? YES : NO;
 }
+
 @end
