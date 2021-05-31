@@ -44,7 +44,7 @@ static const char kVoidViewKey = '\0';
 
 - (void)wg_layoutSubviews {
     
-    self.voidView.center = CGPointMake(self.width / 2, self.height / 2);
+    self.voidView.center = CGPointMake(self.wg_width / 2, self.wg_height / 2);
     
     [self wg_layoutSubviews];
 }
