@@ -7,6 +7,7 @@
 //
 
 #import "UIViewController+WGExtension.h"
+#import <objc/runtime.h>
 
 @implementation UIViewController (WGExtension)
 

@@ -7,7 +7,6 @@
 //
 
 #import "UITabBar+WGExtension.h"
-#import "BadgeView.h"
 
 @implementation UITabBar (WGExtension)
 

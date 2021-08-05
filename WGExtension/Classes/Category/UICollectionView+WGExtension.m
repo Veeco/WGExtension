@@ -8,6 +8,7 @@
 
 #import "UICollectionView+WGExtension.h"
 #import <objc/runtime.h>
+#import "UIView+WGExtension.h"
 
 static const char kVoidViewKey = '\0';
 

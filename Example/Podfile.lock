@@ -1,0 +1,16 @@
+PODS:
+  - WGExtension (0.1.0)
+
+DEPENDENCIES:
+  - WGExtension (from `../`)
+
+EXTERNAL SOURCES:
+  WGExtension:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  WGExtension: e79d7950be444bc65e6b07ef44f77747e5ffe261
+
+PODFILE CHECKSUM: 4341481cee8f64930a4c95753e681e387f89880e
+
+COCOAPODS: 1.10.1

@@ -1,0 +1,6 @@
+use_frameworks!
+target 'WGExtension_Tests' do
+  pod 'WGExtension', :path => '../'
+  
+  
+end
