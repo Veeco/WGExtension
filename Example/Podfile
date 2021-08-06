@@ -1,6 +1,8 @@
 use_frameworks!
-target 'WGExtension_Tests' do
-  pod 'WGExtension', :path => '../'
-  
-  
+inhibit_all_warnings!
+
+target 'WGExtensionExample' do platform :ios, '9.0'
+
+    pod 'WGExtension', :path => '../'
+    
 end

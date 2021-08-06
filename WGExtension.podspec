@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WGExtension'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'WGExtension.'
 
 # This description is used to generate tags and improve search results.
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = 'WGExtension.WGExtension.'
+  s.description      = 'Just the category and tools.'
 
   s.homepage         = 'https://github.com/Veeco/WGExtension'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
@@ -28,7 +28,21 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'WGExtension/Classes/**/*'
+  s.source_files = 'WGExtension/Category/WGExtension.h'
+
+  s.subspec 'Category' do |ss|
+    ss.source_files = 'WGExtension/Category/*+WGExtension.*'
+  end
+
+  s.subspec 'Header' do |ss|
+    ss.source_files = 'WGExtension/Header/*'
+  end
+
+  s.subspec 'Tool' do |ss|
+    ss.subspec 'UUID' do |sss|
+      sss.source_files = 'WGExtension/Tool/UUID/*'
+    end
+  end  
   
   # s.resource_bundles = {
   #   'WGExtension' => ['WGExtension/Assets/*.png']

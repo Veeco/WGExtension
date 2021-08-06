@@ -1,5 +1,13 @@
 PODS:
-  - WGExtension (0.1.0)
+  - WGExtension (1.0.0):
+    - WGExtension/Category (= 1.0.0)
+    - WGExtension/Header (= 1.0.0)
+    - WGExtension/Tool (= 1.0.0)
+  - WGExtension/Category (1.0.0)
+  - WGExtension/Header (1.0.0)
+  - WGExtension/Tool (1.0.0):
+    - WGExtension/Tool/UUID (= 1.0.0)
+  - WGExtension/Tool/UUID (1.0.0)
 
 DEPENDENCIES:
   - WGExtension (from `../`)
@@ -9,8 +17,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  WGExtension: e79d7950be444bc65e6b07ef44f77747e5ffe261
+  WGExtension: e44c4da76820a27c2d4c94b5f0973c5acebd049f
 
-PODFILE CHECKSUM: 4341481cee8f64930a4c95753e681e387f89880e
+PODFILE CHECKSUM: 7956c6b7c045fb5f3c22f134b3251d2448f262bf
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.10.2

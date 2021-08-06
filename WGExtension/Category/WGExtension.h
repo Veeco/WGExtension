@@ -1,16 +1,10 @@
-#ifdef __OBJC__
-#import <UIKit/UIKit.h>
-#else
-#ifndef FOUNDATION_EXPORT
-#if defined(__cplusplus)
-#define FOUNDATION_EXPORT extern "C"
-#else
-#define FOUNDATION_EXPORT extern
-#endif
-#endif
-#endif
+//
+//  WGExtension.h
+//
+//  Created by Veeco on 4/4/17.
+//  Copyright © 2017 Veeco. All rights reserved.
+//
 
-#import "WGExtension.h"
 #import "CALayer+WGExtension.h"
 #import "NSArray+WGExtension.h"
 #import "NSDictionary+WGExtension.h"
@@ -25,11 +19,8 @@
 #import "UITextView+WGExtension.h"
 #import "UIView+WGExtension.h"
 #import "UIViewController+WGExtension.h"
+
 #import "ColorHeader.h"
 #import "UtilHeader.h"
-#import "KeyChainStore.h"
+
 #import "UUIDHelper.h"
-
-FOUNDATION_EXPORT double WGExtensionVersionNumber;
-FOUNDATION_EXPORT const unsigned char WGExtensionVersionString[];
-

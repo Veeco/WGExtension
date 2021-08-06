@@ -1,0 +1,6 @@
+framework module Pods_WGExtensionExample {
+  umbrella header "Pods-WGExtensionExample-umbrella.h"
+
+  export *
+  module * { export * }
+}

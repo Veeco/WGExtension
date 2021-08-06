@@ -3,8 +3,10 @@ iOS实用工具小合集
 
 
 ## 使用方法
-1. 直接把`WGExtension`拖入工程
-2. 导入头文件`WGExtension.h`
+CocoaPods
+```
+pod 'WGExtension'
+```
 
 ## 功能
 ### 1. 防止崩溃
