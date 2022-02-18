@@ -12,7 +12,7 @@
 // 打印
 #define LOG_FUNC NSLog(@"%s", __func__)
 #ifdef DEBUG
-#define NSLog(FORMAT, ...) fprintf(stderr, "%s : %d\t%s\n", [[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#define NSLog(FORMAT, ...) fprintf(stderr, "%s : %s : %d : %s => %s\n", [GetTime() UTF8String], [[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, __func__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
 #else
 #define NSLog(...)
 #endif
@@ -147,6 +147,16 @@ static inline
 NSString * _Nonnull APP_VERSION()
 {
     return NSBundle.mainBundle.infoDictionary[@"CFBundleShortVersionString"];
+}
+
+/// 获取时间
+static inline
+NSString * _Nonnull GetTime()
+{
+    NSDateFormatter *formatter = [NSDateFormatter new];
+    formatter.dateFormat = @"yyyy-MM-dd HH:mm:ss";
+    NSDate *date = NSDate.date;
+    return [formatter stringFromDate:date];
 }
 
 #endif /* UtilHeader_h */
