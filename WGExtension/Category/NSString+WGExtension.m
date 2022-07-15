@@ -92,4 +92,13 @@
     return [da length];
 }
 
+/// 更换协议
+/// @param scheme 协议
+- (nullable NSURL *)changeUrlScheme:(nonnull NSString *)scheme {
+    
+    NSURLComponents *components = [[NSURLComponents alloc] initWithURL:[NSURL URLWithString:self] resolvingAgainstBaseURL:NO];
+    components.scheme = scheme;
+    return [components URL];
+}
+
 @end

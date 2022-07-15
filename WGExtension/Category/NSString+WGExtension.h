@@ -45,4 +45,8 @@
  */
 - (NSInteger)getBytes;
 
+/// 更换协议
+/// @param scheme 协议
+- (nullable NSURL *)changeUrlScheme:(nonnull NSString *)scheme;
+
 @end

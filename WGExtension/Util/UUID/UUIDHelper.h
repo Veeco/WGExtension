@@ -11,10 +11,17 @@
 @interface UUIDHelper : NSObject
 
 /**
- 获取UUID
+ 获取伪UDID
 
  @return UUID
  */
-+ (nonnull NSString *)getUUID;
++ (nonnull NSString *)getFakeUDID;
+
+/**
+ 生成UUID
+ 
+ @return UUID
+ */
++ (nonnull NSString *)createUUID;
 
 @end
