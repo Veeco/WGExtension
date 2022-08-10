@@ -1,18 +1,18 @@
 //
-//  UUIDHelper.m
+//  UUIDUtil.m
 //  PuChi
 //
 //  Created by Veeco on 2017/11/14.
 //  Copyright © 2017年 Chance. All rights reserved.
 //
 
-#import "UUIDHelper.h"
+#import "UUIDUtil.h"
 #import "KeyChainStore.h"
 
 // UUID Key
 static NSString *const kUUIDKey = @"kUUIDKey";
 
-@implementation UUIDHelper
+@implementation UUIDUtil
 
 /**
  获取伪UDID

@@ -28,7 +28,7 @@
 #import "ColorHeader.h"
 #import "UtilHeader.h"
 #import "KeyChainStore.h"
-#import "UUIDHelper.h"
+#import "UUIDUtil.h"
 
 FOUNDATION_EXPORT double WGExtensionVersionNumber;
 FOUNDATION_EXPORT const unsigned char WGExtensionVersionString[];

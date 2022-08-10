@@ -7,47 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E531249180E58F6F9B6113B3F8068C /* UUIDHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D23E382D0D0B1AAA1015ADDDB55E83 /* UUIDHelper.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		0183BB02F0008C6547E04CF1D8BECA8F /* WGExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CC02D64592A627A06D177C199D3B4DE9 /* WGExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		04B5705EEDEF6D78C6D54464AC438BA7 /* NSObject+WGExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FBE6EEB16E656333DC821967F8DECA9 /* NSObject+WGExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1997AB0C5A4EE45FC35B4C30C3B3B938 /* NSDictionary+WGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 382BE4E1A07ED02979783B3118436D50 /* NSDictionary+WGExtension.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		1E1A133B267D4F9C2138E13528A030E5 /* UITextView+WGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DA0E467722A64E0FD8D716078F30FD /* UITextView+WGExtension.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		1EC9F39A96DB1114A615BB19EE391082 /* NSString+WGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F77E5830A4FF200367863B859DA5E82C /* NSString+WGExtension.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0009D57F81891874F9F8718356DF0229 /* UITabBar+WGExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 72C20608E14AAF2A7BE97DCE8E902AAB /* UITabBar+WGExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0839F36A25DE8B8857F78F3EB15AFEAB /* UIViewController+WGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C4A8A4D522DB9DA0EA0D1C563C7DD4 /* UIViewController+WGExtension.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		12E2F4066279AD92525AF09D4E6EC098 /* WGExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CC02D64592A627A06D177C199D3B4DE9 /* WGExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1DC9D1157B870183584D916D390AA403 /* UITabBar+WGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE33A591A7977CA0F29BF6DFA85B372 /* UITabBar+WGExtension.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		2CEA0B2DA4D286B36C4A43B408CBB7AB /* UITextField+WGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AF2B415049FEEE284CEBDC226D5FA9 /* UITextField+WGExtension.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		2E531D5AB194DF54B9F29E9B72872355 /* UIView+WGExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A7A9DF68BEF443AA6ECFF1016F28CA0 /* UIView+WGExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		300953A92F757E6363376F9AEF110D50 /* KeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 946E8D552664AB7A259C7324172C7B7D /* KeyChainStore.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		304196EF3226F87A4F754E4FE3DF5AF3 /* Pods-WGExtensionExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A8334F7C7775E325DA3F2A713D50B274 /* Pods-WGExtensionExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		35CA30BA50FFCC08433B746965ED88A7 /* CALayer+WGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFC3E8A17E0A954722CF1C9283F14B8 /* CALayer+WGExtension.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		3F47F48EDCDC7ED38F46057FA60AB2FC /* ColorHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 60F9EE5A49A8B773A5BE9607A2AF10E1 /* ColorHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3FE5ACEEA21BC328B85D4890A3B3ECAA /* UITextView+WGExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DE92274BC7548E4B734F5CCDA7A92AA /* UITextView+WGExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		43AC2C7F630E1B78FB0D290FB383BA9A /* UIViewController+WGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C4A8A4D522DB9DA0EA0D1C563C7DD4 /* UIViewController+WGExtension.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		43C7747AA638C37721BE3F6D2526BB70 /* UITabBar+WGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE33A591A7977CA0F29BF6DFA85B372 /* UITabBar+WGExtension.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		4797D96AB1A04CB5759ED1CB8450C7DA /* KeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = D55F9BB991CA70F11B3298DB5ED50BE5 /* KeyChainStore.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		342144FFA1FD29D5891BADBD48E2B971 /* NSObject+WGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2821A9BCDB651B9627AE7A5326511C46 /* NSObject+WGExtension.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		3BCBE67698082D3446E52236482898B1 /* UITextView+WGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DA0E467722A64E0FD8D716078F30FD /* UITextView+WGExtension.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		41A7047AAB50E5E6383762A5A72A8AE0 /* UUIDUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = DA74D80AA50833260A600B3C88B6C5B4 /* UUIDUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4D60969513AC02A55726193A120F2F2C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		4FF1D33FD455528FE256D96AE553A7B7 /* NSDictionary+WGExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D8A40A458E6E49C91046950A130CCC5 /* NSDictionary+WGExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		55BF8DDACD48A7A6FE73746A08AD4AE1 /* UIImage+WGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D36E126E3665B2F92BB98F04CE4B3DFF /* UIImage+WGExtension.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		5F821E6CE4C1BDDBE84ED42F9CE4926F /* UICollectionView+WGExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = FF1C34BC024F80225F22AA147BFEF4C4 /* UICollectionView+WGExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		64EE9C08BE29AFA6C3B334F4C7BF8AC4 /* UICollectionView+WGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 912894D292E1A925717C957A4C3921C1 /* UICollectionView+WGExtension.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		689CCC7619EF1001DD00A5EB2D56F02E /* CALayer+WGExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 7533367A9F414208E8F1C7C0D74E5170 /* CALayer+WGExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6B2774197987E683AB6ABB1FA324738F /* UITextField+WGExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = B7178F22B5636D299DC7CC0E5A3F9FBD /* UITextField+WGExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		716D8121963BA186721FF1B027600019 /* UILabel+WGExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EF1D66E0EE5233BC12110D682E21997 /* UILabel+WGExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F8A73FA9FA993461806977E0FE3F5C1 /* UUIDUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 53636C290276E4B4A36CCAC70FA998B9 /* UUIDUtil.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		519620EBF312E028EFF73A2E3CBF491E /* UIImage+WGExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = BADE87C2183B419473AFC0A29EA9E9F5 /* UIImage+WGExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56C8F0EC402219C0D0522848BE64AEEB /* UIImage+WGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D36E126E3665B2F92BB98F04CE4B3DFF /* UIImage+WGExtension.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5D72197D33F6220FE57B68A4A0DE3DB0 /* NSDictionary+WGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 382BE4E1A07ED02979783B3118436D50 /* NSDictionary+WGExtension.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5E0FFA8FDAFC3D068BAA448E3A0F9C66 /* WGExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E84FCE4DA2570F925EA0E15C5447C38 /* WGExtension-dummy.m */; };
+		6AC376966C326C5A37CA76E3CF74DF86 /* UtilHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 72162DC5A93414702B597AFAAFB473F8 /* UtilHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70101D30165B039C8EBE679CCEA63969 /* NSDictionary+WGExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D8A40A458E6E49C91046950A130CCC5 /* NSDictionary+WGExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		736DDE5CF5BE8B9C4D2E1C73DE9EE54B /* NSArray+WGExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A1DDE257C75588A0C6D6E5DE0E07419 /* NSArray+WGExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73A2AFBBA7101D1236DF3560120CCDB1 /* UITextField+WGExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = B7178F22B5636D299DC7CC0E5A3F9FBD /* UITextField+WGExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		74A575F5ED1D7E7CE47033417BBA2702 /* Pods-WGExtensionExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE034DDD4DFC372ABB363BC2D64CC00 /* Pods-WGExtensionExample-dummy.m */; };
+		7878FBC3FCAEE55C69F5CE6B9EB1742C /* UIViewController+WGExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = E8BE81BF601C8F103C24C4451F2FB2DA /* UIViewController+WGExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7917342C70F4D7299758F162D8866A28 /* KeyChainStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E271E083626041E7AA072D35A2F3DEE /* KeyChainStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		79D776E86433FD4D5471BBD9939461B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		8569C8A407AEE53DD63F0DD04EEA3193 /* UITableView+WGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9F554FB72BB1000928E9DD6AC31445 /* UITableView+WGExtension.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		8F77D971B27B5E8B84C5381269F1CC13 /* KeyChainStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 29114B30A1BBC8CFBD8C8DBB262EC2B8 /* KeyChainStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		98D12A5E843E487009FF9E58C5FBC8F7 /* NSArray+WGExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A1DDE257C75588A0C6D6E5DE0E07419 /* NSArray+WGExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9948433245B46C3DD9B8F7E9F3F5B813 /* UIView+WGExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A7A9DF68BEF443AA6ECFF1016F28CA0 /* UIView+WGExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ACB8F05C2B0AF51909CFD670A35B30B3 /* UITableView+WGExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A812251BD393B20A4D61BEB503BABF8 /* UITableView+WGExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B6177DDA18873794AE81491F75502577 /* UtilHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 72162DC5A93414702B597AFAAFB473F8 /* UtilHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B71FED09E6ADCAEEC768EAE3D4DC87DA /* UITabBar+WGExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 72C20608E14AAF2A7BE97DCE8E902AAB /* UITabBar+WGExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B777BD87E118C5A73287A792FA428723 /* UITextField+WGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AF2B415049FEEE284CEBDC226D5FA9 /* UITextField+WGExtension.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		C6F96879DEE53CC4F5D5F6A2BD124B88 /* UIViewController+WGExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = E8BE81BF601C8F103C24C4451F2FB2DA /* UIViewController+WGExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3685F7394E735FA76744F0BD8924CF8 /* NSObject+WGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2821A9BCDB651B9627AE7A5326511C46 /* NSObject+WGExtension.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		D5AEFC8F17185F008E948199F0676F04 /* NSString+WGExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C2D55ABF50EC994F342EFF3A358AD6F /* NSString+WGExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D8A070DAED7F2F6459BE459A595D318F /* WGExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E84FCE4DA2570F925EA0E15C5447C38 /* WGExtension-dummy.m */; };
-		DAA82BF676729B22F1F7EB84910A8E54 /* UIView+WGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DF8DEED9368B7744BC7742DAB7055BD7 /* UIView+WGExtension.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		DB0193C5C208FF525A0399202559E067 /* WGExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = CC4594D8578C2417B8882925F9D0F303 /* WGExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DE1F5A2A2D0C0108209186B1B238FC96 /* UILabel+WGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E90DABC1EE9F657FC31CF3B6D337893 /* UILabel+WGExtension.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		F0B704FDB453A0AB81406BB8BA286401 /* NSArray+WGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B10E3A63BF596C5D58A0C2883F1F167B /* NSArray+WGExtension.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		F2583E94F7113C6022D81E5F8CD29BB5 /* UUIDHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = F995620073437BAC1467E7F097B16A41 /* UUIDHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FDBE14BC2700EB993E18F27D9023641C /* UIImage+WGExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = BADE87C2183B419473AFC0A29EA9E9F5 /* UIImage+WGExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A92E3F250BD69B507401A0E1256CFCAD /* UITextView+WGExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DE92274BC7548E4B734F5CCDA7A92AA /* UITextView+WGExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB0F7FF968DBE883E24AC3D9121E20CA /* ColorHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 60F9EE5A49A8B773A5BE9607A2AF10E1 /* ColorHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB149FFBF5369F5955198C5E11952A44 /* NSObject+WGExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FBE6EEB16E656333DC821967F8DECA9 /* NSObject+WGExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC3067738AD65F5DA1AAB1D381A713E8 /* WGExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = CC4594D8578C2417B8882925F9D0F303 /* WGExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C471226447C41090CDDC0366C552B1A7 /* UITableView+WGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9F554FB72BB1000928E9DD6AC31445 /* UITableView+WGExtension.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C7BD63815ABF043C0FA077A37B088BD8 /* UILabel+WGExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EF1D66E0EE5233BC12110D682E21997 /* UILabel+WGExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4CEC5C6EEEF9D0A371DDA4641E5F910 /* UIView+WGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DF8DEED9368B7744BC7742DAB7055BD7 /* UIView+WGExtension.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D7F8E692CF57BD5DEEF4CA0F3C6ABC97 /* UILabel+WGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E90DABC1EE9F657FC31CF3B6D337893 /* UILabel+WGExtension.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		DBD6423E3C1EC526DFC6FC98790DE73A /* UICollectionView+WGExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = FF1C34BC024F80225F22AA147BFEF4C4 /* UICollectionView+WGExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC92C8F954EDC516BF059BA61CF9F592 /* NSString+WGExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C2D55ABF50EC994F342EFF3A358AD6F /* NSString+WGExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCAB26776A64E48D75D7C3B2874C42AE /* CALayer+WGExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 7533367A9F414208E8F1C7C0D74E5170 /* CALayer+WGExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0551656D1057B87439895B798AF605D /* NSArray+WGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B10E3A63BF596C5D58A0C2883F1F167B /* NSArray+WGExtension.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		EF26663CC64C179ADAFB7C3C0D25A7B3 /* NSString+WGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F77E5830A4FF200367863B859DA5E82C /* NSString+WGExtension.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F339E56769BBB82B998B1414179E3F72 /* UITableView+WGExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A812251BD393B20A4D61BEB503BABF8 /* UITableView+WGExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA370F6A2E5DB1F9919A9C9C72B8658F /* CALayer+WGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFC3E8A17E0A954722CF1C9283F14B8 /* CALayer+WGExtension.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FEC22E7F89F67AE73C2D2F2DDB101616 /* UICollectionView+WGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 912894D292E1A925717C957A4C3921C1 /* UICollectionView+WGExtension.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +68,6 @@
 		1E90DABC1EE9F657FC31CF3B6D337893 /* UILabel+WGExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+WGExtension.m"; path = "WGExtension/Category/UILabel+WGExtension.m"; sourceTree = "<group>"; };
 		2821A9BCDB651B9627AE7A5326511C46 /* NSObject+WGExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+WGExtension.m"; path = "WGExtension/Category/NSObject+WGExtension.m"; sourceTree = "<group>"; };
 		284BA4D1242271B9A3A6DF5B656A3C0D /* Pods-WGExtensionExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WGExtensionExample.modulemap"; sourceTree = "<group>"; };
-		29114B30A1BBC8CFBD8C8DBB262EC2B8 /* KeyChainStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KeyChainStore.h; path = WGExtension/Util/UUID/KeyChainStore.h; sourceTree = "<group>"; };
 		2D8A40A458E6E49C91046950A130CCC5 /* NSDictionary+WGExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+WGExtension.h"; path = "WGExtension/Category/NSDictionary+WGExtension.h"; sourceTree = "<group>"; };
 		2FBE6EEB16E656333DC821967F8DECA9 /* NSObject+WGExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+WGExtension.h"; path = "WGExtension/Category/NSObject+WGExtension.h"; sourceTree = "<group>"; };
 		382BE4E1A07ED02979783B3118436D50 /* NSDictionary+WGExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+WGExtension.m"; path = "WGExtension/Category/NSDictionary+WGExtension.m"; sourceTree = "<group>"; };
@@ -76,12 +75,13 @@
 		3EF1D66E0EE5233BC12110D682E21997 /* UILabel+WGExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+WGExtension.h"; path = "WGExtension/Category/UILabel+WGExtension.h"; sourceTree = "<group>"; };
 		4183F906FB82593604373013F0EBAC1C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		4205F22D082549827E429E1C38CCBE6D /* WGExtension-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WGExtension-prefix.pch"; sourceTree = "<group>"; };
+		53636C290276E4B4A36CCAC70FA998B9 /* UUIDUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UUIDUtil.m; path = WGExtension/Util/UUID/UUIDUtil.m; sourceTree = "<group>"; };
 		56AAC3FDD38624D15183EDDB9508523A /* Pods-WGExtensionExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WGExtensionExample-Info.plist"; sourceTree = "<group>"; };
 		572900A37F8AD5FD976FEA6ED39FA1AC /* WGExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WGExtension.release.xcconfig; sourceTree = "<group>"; };
-		57D23E382D0D0B1AAA1015ADDDB55E83 /* UUIDHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UUIDHelper.m; path = WGExtension/Util/UUID/UUIDHelper.m; sourceTree = "<group>"; };
 		5A1DDE257C75588A0C6D6E5DE0E07419 /* NSArray+WGExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+WGExtension.h"; path = "WGExtension/Category/NSArray+WGExtension.h"; sourceTree = "<group>"; };
 		5C2D55ABF50EC994F342EFF3A358AD6F /* NSString+WGExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+WGExtension.h"; path = "WGExtension/Category/NSString+WGExtension.h"; sourceTree = "<group>"; };
 		5DE92274BC7548E4B734F5CCDA7A92AA /* UITextView+WGExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextView+WGExtension.h"; path = "WGExtension/Category/UITextView+WGExtension.h"; sourceTree = "<group>"; };
+		5E271E083626041E7AA072D35A2F3DEE /* KeyChainStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KeyChainStore.h; path = WGExtension/Util/UUID/KeyChainStore.h; sourceTree = "<group>"; };
 		60F9EE5A49A8B773A5BE9607A2AF10E1 /* ColorHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ColorHeader.h; path = WGExtension/Header/ColorHeader.h; sourceTree = "<group>"; };
 		6A2F29A8C1333E61A4805EA562C6D0B4 /* Pods-WGExtensionExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WGExtensionExample.debug.xcconfig"; sourceTree = "<group>"; };
 		6DC7B83F0F975E51A5CB1DB11082DD9C /* Pods-WGExtensionExample */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-WGExtensionExample"; path = Pods_WGExtensionExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +95,7 @@
 		84DA0E467722A64E0FD8D716078F30FD /* UITextView+WGExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextView+WGExtension.m"; path = "WGExtension/Category/UITextView+WGExtension.m"; sourceTree = "<group>"; };
 		8B2F43E0731E8E4FFE1CA7138734EE8F /* WGExtension.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WGExtension.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		912894D292E1A925717C957A4C3921C1 /* UICollectionView+WGExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UICollectionView+WGExtension.m"; path = "WGExtension/Category/UICollectionView+WGExtension.m"; sourceTree = "<group>"; };
+		946E8D552664AB7A259C7324172C7B7D /* KeyChainStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KeyChainStore.m; path = WGExtension/Util/UUID/KeyChainStore.m; sourceTree = "<group>"; };
 		97AF2B415049FEEE284CEBDC226D5FA9 /* UITextField+WGExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+WGExtension.m"; path = "WGExtension/Category/UITextField+WGExtension.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A8334F7C7775E325DA3F2A713D50B274 /* Pods-WGExtensionExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WGExtensionExample-umbrella.h"; sourceTree = "<group>"; };
@@ -108,14 +109,13 @@
 		CC02D64592A627A06D177C199D3B4DE9 /* WGExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WGExtension-umbrella.h"; sourceTree = "<group>"; };
 		CC4594D8578C2417B8882925F9D0F303 /* WGExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WGExtension.h; path = WGExtension/Category/WGExtension.h; sourceTree = "<group>"; };
 		D36E126E3665B2F92BB98F04CE4B3DFF /* UIImage+WGExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+WGExtension.m"; path = "WGExtension/Category/UIImage+WGExtension.m"; sourceTree = "<group>"; };
-		D55F9BB991CA70F11B3298DB5ED50BE5 /* KeyChainStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KeyChainStore.m; path = WGExtension/Util/UUID/KeyChainStore.m; sourceTree = "<group>"; };
 		D670B56D15EC3388685C53C2D47B222D /* Pods-WGExtensionExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WGExtensionExample-acknowledgements.plist"; sourceTree = "<group>"; };
 		DA43BD9DED7D5896187F330403B04901 /* WGExtension */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WGExtension; path = WGExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA74D80AA50833260A600B3C88B6C5B4 /* UUIDUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UUIDUtil.h; path = WGExtension/Util/UUID/UUIDUtil.h; sourceTree = "<group>"; };
 		DF8DEED9368B7744BC7742DAB7055BD7 /* UIView+WGExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+WGExtension.m"; path = "WGExtension/Category/UIView+WGExtension.m"; sourceTree = "<group>"; };
 		E8BE81BF601C8F103C24C4451F2FB2DA /* UIViewController+WGExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+WGExtension.h"; path = "WGExtension/Category/UIViewController+WGExtension.h"; sourceTree = "<group>"; };
 		EFF8B7231BC0850F911E669897985051 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		F77E5830A4FF200367863B859DA5E82C /* NSString+WGExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+WGExtension.m"; path = "WGExtension/Category/NSString+WGExtension.m"; sourceTree = "<group>"; };
-		F995620073437BAC1467E7F097B16A41 /* UUIDHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UUIDHelper.h; path = WGExtension/Util/UUID/UUIDHelper.h; sourceTree = "<group>"; };
 		FBC811D05090B7FFD4F7A41986D52510 /* Pods-WGExtensionExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WGExtensionExample-acknowledgements.markdown"; sourceTree = "<group>"; };
 		FD9F554FB72BB1000928E9DD6AC31445 /* UITableView+WGExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+WGExtension.m"; path = "WGExtension/Category/UITableView+WGExtension.m"; sourceTree = "<group>"; };
 		FF1C34BC024F80225F22AA147BFEF4C4 /* UICollectionView+WGExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UICollectionView+WGExtension.h"; path = "WGExtension/Category/UICollectionView+WGExtension.h"; sourceTree = "<group>"; };
@@ -159,7 +159,7 @@
 		2E8451C04127BB634AE9DB5B63CDE1EC /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				D30FD980F6AB3016E85E541461F2B50F /* UUID */,
+				C0CBA99C8FDC0C7A541B9FE95ABA5216 /* UUID */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -265,6 +265,17 @@
 			name = Pod;
 			sourceTree = "<group>";
 		};
+		C0CBA99C8FDC0C7A541B9FE95ABA5216 /* UUID */ = {
+			isa = PBXGroup;
+			children = (
+				5E271E083626041E7AA072D35A2F3DEE /* KeyChainStore.h */,
+				946E8D552664AB7A259C7324172C7B7D /* KeyChainStore.m */,
+				DA74D80AA50833260A600B3C88B6C5B4 /* UUIDUtil.h */,
+				53636C290276E4B4A36CCAC70FA998B9 /* UUIDUtil.m */,
+			);
+			name = UUID;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
@@ -282,17 +293,6 @@
 				578452D2E740E91742655AC8F1636D1F /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D30FD980F6AB3016E85E541461F2B50F /* UUID */ = {
-			isa = PBXGroup;
-			children = (
-				29114B30A1BBC8CFBD8C8DBB262EC2B8 /* KeyChainStore.h */,
-				D55F9BB991CA70F11B3298DB5ED50BE5 /* KeyChainStore.m */,
-				F995620073437BAC1467E7F097B16A41 /* UUIDHelper.h */,
-				57D23E382D0D0B1AAA1015ADDDB55E83 /* UUIDHelper.m */,
-			);
-			name = UUID;
 			sourceTree = "<group>";
 		};
 		FB5121B05102E40A65F3599C6BFAB3D9 /* Pods-WGExtensionExample */ = {
@@ -315,38 +315,38 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		520CC7AA5549FEE838AA6A27A52B6589 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				689CCC7619EF1001DD00A5EB2D56F02E /* CALayer+WGExtension.h in Headers */,
-				3F47F48EDCDC7ED38F46057FA60AB2FC /* ColorHeader.h in Headers */,
-				8F77D971B27B5E8B84C5381269F1CC13 /* KeyChainStore.h in Headers */,
-				98D12A5E843E487009FF9E58C5FBC8F7 /* NSArray+WGExtension.h in Headers */,
-				4FF1D33FD455528FE256D96AE553A7B7 /* NSDictionary+WGExtension.h in Headers */,
-				04B5705EEDEF6D78C6D54464AC438BA7 /* NSObject+WGExtension.h in Headers */,
-				D5AEFC8F17185F008E948199F0676F04 /* NSString+WGExtension.h in Headers */,
-				5F821E6CE4C1BDDBE84ED42F9CE4926F /* UICollectionView+WGExtension.h in Headers */,
-				FDBE14BC2700EB993E18F27D9023641C /* UIImage+WGExtension.h in Headers */,
-				716D8121963BA186721FF1B027600019 /* UILabel+WGExtension.h in Headers */,
-				B71FED09E6ADCAEEC768EAE3D4DC87DA /* UITabBar+WGExtension.h in Headers */,
-				ACB8F05C2B0AF51909CFD670A35B30B3 /* UITableView+WGExtension.h in Headers */,
-				6B2774197987E683AB6ABB1FA324738F /* UITextField+WGExtension.h in Headers */,
-				3FE5ACEEA21BC328B85D4890A3B3ECAA /* UITextView+WGExtension.h in Headers */,
-				9948433245B46C3DD9B8F7E9F3F5B813 /* UIView+WGExtension.h in Headers */,
-				C6F96879DEE53CC4F5D5F6A2BD124B88 /* UIViewController+WGExtension.h in Headers */,
-				B6177DDA18873794AE81491F75502577 /* UtilHeader.h in Headers */,
-				F2583E94F7113C6022D81E5F8CD29BB5 /* UUIDHelper.h in Headers */,
-				DB0193C5C208FF525A0399202559E067 /* WGExtension.h in Headers */,
-				0183BB02F0008C6547E04CF1D8BECA8F /* WGExtension-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A2063910E52F0AD65D1AFCF4C09D8E12 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				304196EF3226F87A4F754E4FE3DF5AF3 /* Pods-WGExtensionExample-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F38A1C96D5CCF6EC5A34861FC017FB42 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCAB26776A64E48D75D7C3B2874C42AE /* CALayer+WGExtension.h in Headers */,
+				AB0F7FF968DBE883E24AC3D9121E20CA /* ColorHeader.h in Headers */,
+				7917342C70F4D7299758F162D8866A28 /* KeyChainStore.h in Headers */,
+				736DDE5CF5BE8B9C4D2E1C73DE9EE54B /* NSArray+WGExtension.h in Headers */,
+				70101D30165B039C8EBE679CCEA63969 /* NSDictionary+WGExtension.h in Headers */,
+				BB149FFBF5369F5955198C5E11952A44 /* NSObject+WGExtension.h in Headers */,
+				DC92C8F954EDC516BF059BA61CF9F592 /* NSString+WGExtension.h in Headers */,
+				DBD6423E3C1EC526DFC6FC98790DE73A /* UICollectionView+WGExtension.h in Headers */,
+				519620EBF312E028EFF73A2E3CBF491E /* UIImage+WGExtension.h in Headers */,
+				C7BD63815ABF043C0FA077A37B088BD8 /* UILabel+WGExtension.h in Headers */,
+				0009D57F81891874F9F8718356DF0229 /* UITabBar+WGExtension.h in Headers */,
+				F339E56769BBB82B998B1414179E3F72 /* UITableView+WGExtension.h in Headers */,
+				73A2AFBBA7101D1236DF3560120CCDB1 /* UITextField+WGExtension.h in Headers */,
+				A92E3F250BD69B507401A0E1256CFCAD /* UITextView+WGExtension.h in Headers */,
+				2E531D5AB194DF54B9F29E9B72872355 /* UIView+WGExtension.h in Headers */,
+				7878FBC3FCAEE55C69F5CE6B9EB1742C /* UIViewController+WGExtension.h in Headers */,
+				6AC376966C326C5A37CA76E3CF74DF86 /* UtilHeader.h in Headers */,
+				41A7047AAB50E5E6383762A5A72A8AE0 /* UUIDUtil.h in Headers */,
+				BC3067738AD65F5DA1AAB1D381A713E8 /* WGExtension.h in Headers */,
+				12E2F4066279AD92525AF09D4E6EC098 /* WGExtension-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,8 +376,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D1253FB50AC9DFF3A41271428EB10670 /* Build configuration list for PBXNativeTarget "WGExtension" */;
 			buildPhases = (
-				520CC7AA5549FEE838AA6A27A52B6589 /* Headers */,
-				06335ED061C91C0EC8423A7FDE27C5C0 /* Sources */,
+				F38A1C96D5CCF6EC5A34861FC017FB42 /* Headers */,
+				09B3627E592753B74A19C8E7D766A4D8 /* Sources */,
 				4C1F21B07D54174DC5CE1CEFCCE4483F /* Frameworks */,
 				88C7BF7B9CFFAC76038DEC6574729143 /* Resources */,
 			);
@@ -436,27 +436,27 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		06335ED061C91C0EC8423A7FDE27C5C0 /* Sources */ = {
+		09B3627E592753B74A19C8E7D766A4D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35CA30BA50FFCC08433B746965ED88A7 /* CALayer+WGExtension.m in Sources */,
-				4797D96AB1A04CB5759ED1CB8450C7DA /* KeyChainStore.m in Sources */,
-				F0B704FDB453A0AB81406BB8BA286401 /* NSArray+WGExtension.m in Sources */,
-				1997AB0C5A4EE45FC35B4C30C3B3B938 /* NSDictionary+WGExtension.m in Sources */,
-				D3685F7394E735FA76744F0BD8924CF8 /* NSObject+WGExtension.m in Sources */,
-				1EC9F39A96DB1114A615BB19EE391082 /* NSString+WGExtension.m in Sources */,
-				64EE9C08BE29AFA6C3B334F4C7BF8AC4 /* UICollectionView+WGExtension.m in Sources */,
-				55BF8DDACD48A7A6FE73746A08AD4AE1 /* UIImage+WGExtension.m in Sources */,
-				DE1F5A2A2D0C0108209186B1B238FC96 /* UILabel+WGExtension.m in Sources */,
-				43C7747AA638C37721BE3F6D2526BB70 /* UITabBar+WGExtension.m in Sources */,
-				8569C8A407AEE53DD63F0DD04EEA3193 /* UITableView+WGExtension.m in Sources */,
-				B777BD87E118C5A73287A792FA428723 /* UITextField+WGExtension.m in Sources */,
-				1E1A133B267D4F9C2138E13528A030E5 /* UITextView+WGExtension.m in Sources */,
-				DAA82BF676729B22F1F7EB84910A8E54 /* UIView+WGExtension.m in Sources */,
-				43AC2C7F630E1B78FB0D290FB383BA9A /* UIViewController+WGExtension.m in Sources */,
-				00E531249180E58F6F9B6113B3F8068C /* UUIDHelper.m in Sources */,
-				D8A070DAED7F2F6459BE459A595D318F /* WGExtension-dummy.m in Sources */,
+				FA370F6A2E5DB1F9919A9C9C72B8658F /* CALayer+WGExtension.m in Sources */,
+				300953A92F757E6363376F9AEF110D50 /* KeyChainStore.m in Sources */,
+				E0551656D1057B87439895B798AF605D /* NSArray+WGExtension.m in Sources */,
+				5D72197D33F6220FE57B68A4A0DE3DB0 /* NSDictionary+WGExtension.m in Sources */,
+				342144FFA1FD29D5891BADBD48E2B971 /* NSObject+WGExtension.m in Sources */,
+				EF26663CC64C179ADAFB7C3C0D25A7B3 /* NSString+WGExtension.m in Sources */,
+				FEC22E7F89F67AE73C2D2F2DDB101616 /* UICollectionView+WGExtension.m in Sources */,
+				56C8F0EC402219C0D0522848BE64AEEB /* UIImage+WGExtension.m in Sources */,
+				D7F8E692CF57BD5DEEF4CA0F3C6ABC97 /* UILabel+WGExtension.m in Sources */,
+				1DC9D1157B870183584D916D390AA403 /* UITabBar+WGExtension.m in Sources */,
+				C471226447C41090CDDC0366C552B1A7 /* UITableView+WGExtension.m in Sources */,
+				2CEA0B2DA4D286B36C4A43B408CBB7AB /* UITextField+WGExtension.m in Sources */,
+				3BCBE67698082D3446E52236482898B1 /* UITextView+WGExtension.m in Sources */,
+				D4CEC5C6EEEF9D0A371DDA4641E5F910 /* UIView+WGExtension.m in Sources */,
+				0839F36A25DE8B8857F78F3EB15AFEAB /* UIViewController+WGExtension.m in Sources */,
+				4F8A73FA9FA993461806977E0FE3F5C1 /* UUIDUtil.m in Sources */,
+				5E0FFA8FDAFC3D068BAA448E3A0F9C66 /* WGExtension-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
