@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WGExtension'
-  s.version          = '1.0.4'
+  s.version          = '1.0.5'
   s.summary          = 'WGExtension.'
 
 # This description is used to generate tags and improve search results.
@@ -38,7 +38,7 @@ Pod::Spec.new do |s|
     ss.source_files = 'WGExtension/Header/*'
   end
 
-  s.subspec 'Tool' do |ss|
+  s.subspec 'Util' do |ss|
     ss.subspec 'UUID' do |sss|
       sss.source_files = 'WGExtension/Util/UUID/*'
     end

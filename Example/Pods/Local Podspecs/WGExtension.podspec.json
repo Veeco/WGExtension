@@ -1,6 +1,6 @@
 {
   "name": "WGExtension",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "summary": "WGExtension.",
   "description": "Just the category and tools.",
   "homepage": "https://github.com/Veeco/WGExtension",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/Veeco/WGExtension.git",
-    "tag": "1.0.2"
+    "tag": "1.0.5"
   },
   "platforms": {
     "ios": "9.0"
@@ -29,7 +29,7 @@
       "source_files": "WGExtension/Header/*"
     },
     {
-      "name": "Tool",
+      "name": "Util",
       "subspecs": [
         {
           "name": "UUID",
