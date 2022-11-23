@@ -9,6 +9,8 @@
 #ifndef UtilHeader_h
 #define UtilHeader_h
 
+#import <UIKit/UIKit.h>
+
 // 打印
 #define LOG_FUNC NSLog(@"%s", __func__)
 #ifdef DEBUG
@@ -22,6 +24,7 @@
 #define STRONG(OBJECT) __strong __typeof(OBJECT) OBJECT = WEAK##_##OBJECT;
 
 // 单例
+#define SINGLETON_INIT singletonInit
 #define SINGLETON(CLASS) \
 + (__kindof CLASS *)sharedSingleton { \
  \
@@ -34,6 +37,9 @@
     static dispatch_once_t onceToken; \
     dispatch_once(&onceToken, ^{ \
         kSharedSingleton = [super allocWithZone:zone]; \
+        if ([kSharedSingleton respondsToSelector:@selector(singletonInit)]) { \
+            [kSharedSingleton performSelector:@selector(singletonInit)]; \
+            } \
     }); \
     return kSharedSingleton; \
 } \
