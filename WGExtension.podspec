@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WGExtension'
-  s.version          = '1.0.6'
+  s.version          = '1.0.7'
   s.summary          = 'WGExtension.'
 
 # This description is used to generate tags and improve search results.

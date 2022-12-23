@@ -51,11 +51,4 @@ UIColor * _Nonnull UIColorMakeWithRGBA(int red, int green, int blue, float alpha
     return [UIColor colorWithRed:red / 255.0f green:green / 255.0f blue:blue / 255.0f alpha:alpha];
 }
 
-// 主色
-static inline
-UIColor * _Nonnull COLOR_MAIN()
-{
-    return UIColorMakeFromRGB(0x377FEE);
-}
-
 #endif /* ColorHeader_h */
