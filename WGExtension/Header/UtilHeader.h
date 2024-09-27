@@ -26,14 +26,15 @@
 // 单例
 #define SINGLETON_INIT singletonInit
 #define SINGLETON(CLASS) \
+static CLASS *kSharedSingleton; \
 + (__kindof CLASS *)sharedSingleton { \
  \
+    if (kSharedSingleton) return kSharedSingleton; \
     return [[self alloc] init]; \
 } \
  \
 + (__kindof CLASS *)allocWithZone:(struct _NSZone *)zone { \
  \
-    static CLASS *kSharedSingleton; \
     static dispatch_once_t onceToken; \
     dispatch_once(&onceToken, ^{ \
         kSharedSingleton = [super allocWithZone:zone]; \
